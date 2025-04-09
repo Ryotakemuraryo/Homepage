@@ -17,7 +17,7 @@ nav {
   display:flex;/*positioning side by side*/
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200%);/* border-bottom: 1px solid oklch(80% 3% 200);(equivalent)*/
+  border-bottom-color: oklch(80% 3% 200);/* border-bottom: 1px solid oklch(80% 3% 200);(equivalent)*/
 }
 
 nav a{
