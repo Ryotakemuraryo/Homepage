@@ -1,10 +1,15 @@
+html{
+  --color-accent:oklch(65% 50% 0);
+  accent-color: var(--color-accent);/*all elements that use the accent color can inherit it.*/
+}
+
 body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
        */
     max-width: 100ch;
     margin-inline: auto; /*center the content*/
-    padding-inline: 1rem;/*predict content from touching edges when display is downsized(add 1character size margin to both left and right)*/
+    padding-inline: 1rem;/*predict content from touching edges when display is downsized(add 1character size margin to both left and right*/
     font: 100% / 1.5 system-ui;
 }
 
@@ -30,5 +35,5 @@ nav a{
 
 nav a.current{
   border-bottom: 0.4em solid oklch(90% 3% 200);/*using bold underline to highlight current tag*/
-  padding-bottom: 0.1em;/*decrease the same height as increased due to this css*/
+  padding-bottom: 0.1em;/*decrease the same height as increased due to this css group*/
 }
