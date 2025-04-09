@@ -15,13 +15,16 @@ nav li {
 
 nav {
   display:flex;/*positioning side by side*/
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200%);/* border-bottom: 1px solid oklch(80% 3% 200);(equivalent)*/
 }
 
 nav a{
-  flex: 1;
+  flex: 1;/*make width of all <a> same*/
   text-decoration: none;/*remove underline*/
-  color: inherit;
+  color: inherit;/*make links use the same text color as their parent element*/
   text-align: center;/*center the text in its box*/
-  padding: 0.5em;
+  padding: 0.5em;/*make it easier to read by adding margin*/
 }
 
