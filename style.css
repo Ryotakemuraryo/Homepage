@@ -28,3 +28,7 @@ nav a{
   padding: 0.5em;/*make it easier to read by adding margin*/
 }
 
+nav a.current{
+  border-bottom: 0.4em solid oklch(90% 3% 200);/*using bold underline to highlight current tag*/
+  padding-bottom: 0.1em;/*decrease the same height as increased due to this css*/
+}
