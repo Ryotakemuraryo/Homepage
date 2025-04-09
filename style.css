@@ -17,5 +17,7 @@ nav {
   display:flex/*positioning side by side*/
 }
 
-
+nav a{
+  flex: 1
+}
 
