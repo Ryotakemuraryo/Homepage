@@ -44,3 +44,9 @@ nav a:hover {/*mouce pointing area*/
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
+input,
+textarea,
+button {
+  font: inherit
+}
+
