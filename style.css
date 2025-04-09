@@ -7,3 +7,8 @@ body {
     padding-inline: 1rem;/*predict content from touching edges when display is downsized(add 1character size margin to both left and right)*/
     font: 100% / 1.5 system-ui;
 }
+
+nav ul,
+nav li {
+  display: contents; /*eliminating edge of list*/
+}
