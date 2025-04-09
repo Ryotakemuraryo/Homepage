@@ -12,3 +12,8 @@ nav ul,
 nav li {
   display: contents; /*eliminating edge of list*/
 }
+
+nav {
+  display:flex
+}
+
