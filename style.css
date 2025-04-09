@@ -14,10 +14,10 @@ nav li {
 }
 
 nav {
-  display:flex/*positioning side by side*/
+  display:flex;/*positioning side by side*/
 }
 
 nav a{
-  flex: 1
+  flex: 1;
 }
 
