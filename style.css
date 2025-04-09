@@ -19,5 +19,9 @@ nav {
 
 nav a{
   flex: 1;
+  text-decoration: none;/*remove underline*/
+  color: inherit;
+  text-align: center;/*center the text in its box*/
+  padding: 0.5em;
 }
 
