@@ -4,5 +4,6 @@ body {
        */
     max-width: 100ch;
     margin-inline: auto; /*center the content*/
+    padding-inline: 1rem;/*predict content from touching edges when display is downsized(add 1character size margin to both left and right)*/
     font: 100% / 1.5 system-ui;
 }
