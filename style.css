@@ -46,6 +46,7 @@ nav a:hover {/*mouce pointing area*/
 }
 
 form {
-  display: grid
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
