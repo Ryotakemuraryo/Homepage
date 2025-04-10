@@ -66,13 +66,15 @@ form button{
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   /*make the grid have as many columns as can fit in the container, each with a minimum width of 15em and a maximum width of 1fr*/
   gap: 1em;
+  grid-auto-rows: 1fr; /*make it equal the height of automatic made rows*/
 }
 
 .projects article{
-  grid-template-rows: subgrid;
-  grid-row: span 3;
+  display: grid;/*make grid inside article*/
+  grid-template-rows: subgrid;/*align the height*/
+  grid-row: span 3;/*fix the height(article occupies 3 rows)*/
 }
 
 .projects article h2{
-  margin: 0;
+  margin: 0;/*delete margin*/
 }
