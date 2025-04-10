@@ -73,6 +73,7 @@ form button{
   display: grid;/*make grid inside article*/
   grid-template-rows: subgrid;/*align the height*/
   grid-row: span 3;/*fix the height(article occupies 3 rows)*/
+  gap: 0.2em;
 }
 
 .projects article h2{
