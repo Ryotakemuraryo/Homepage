@@ -47,7 +47,13 @@ nav a:hover {/*mouce pointing area*/
 
 form {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr;/*auto means that the column will be as wide as its content, and 1fr means that the column will take up the remaining space*/
   gap: 1em;
+}
+
+form label{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
 }
 
