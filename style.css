@@ -87,3 +87,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;/*narrow the gap between lines*/
   text-wrap: balance;/*prevent uneven lines*/
 }
+
+section{
+  margin-block: 2em;
+}
+
+section h2{
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+  font-size: 150%;
+}
