@@ -1,6 +1,7 @@
 html{
   --color-accent:oklch(65% 50% 0);
   accent-color: var(--color-accent);/*all elements that use the accent color can inherit it.*/
+  font: 100% / 1.5 system-ui;
 }
 
 body {
@@ -44,9 +45,18 @@ nav a:hover {/*mouce pointing area*/
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
-input,
-textarea,
-button {
-  font: inherit
+form label {
+  display:block;
+  margin-block: 0.5em;
+}
+
+form input,
+form textarea,
+form button {/*make the font same*/
+  font: inherit;/*from the parent HTML:input → form → body → html*/
+  display: block;/*enable automatic line breaking*/
+  width: 100%;
+  box-sizing: border-box;/*width 100% including padding and border*/
+
 }
 
