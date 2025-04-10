@@ -56,3 +56,13 @@ form label{
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
 }
+
+form input,
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  grid-column: 1 / -1;
+}
