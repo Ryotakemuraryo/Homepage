@@ -93,10 +93,11 @@ section{
 }
 
 section h2{
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 0.2em;
+  border-bottom: 4px solid var(--color-accent);
+  padding-bottom: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 150%;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 header{
