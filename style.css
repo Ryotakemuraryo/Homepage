@@ -98,3 +98,17 @@ section h2{
   margin-bottom: 0.5em;
   font-size: 150%;
 }
+
+header{
+  position: relative;
+  padding: 1rem;
+}
+
+.resumephoto{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px; 
+  height: 40px;
+  object-fit: cover;
+}
