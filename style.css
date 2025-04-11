@@ -115,3 +115,22 @@ header{
   padding: 2px;
   background-color: white;
 }
+
+li{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+time {
+  min-width: 140px;
+  color: #666;
+  font-weight: bold;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+li br {
+  display: none;
+}
