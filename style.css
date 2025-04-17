@@ -1,5 +1,6 @@
 html{
   --color-accent:oklch(65% 50% 0);
+  color-scheme: dark;
   accent-color: var(--color-accent);/*all elements that use the accent color can inherit it.*/
   font: 100% / 1.5 system-ui;
 }
