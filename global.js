@@ -93,7 +93,8 @@ form?.addEventListener('submit', function (event){
     params.append(name, value);
     console.log(name, value);
   }
-  const mailto = `rtakemura@ucsd.edu?${params.toString()}`;
+  const mailto = `mailto:rtakemura@ucsd.edu?${params.toString()}`;
+  window.location.href = mailto;
 });
 
 
