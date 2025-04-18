@@ -83,5 +83,17 @@ select.addEventListener('input', function (event) {
     localStorage.colorScheme = event.target.value
 });
 
+const form = document.querySelector("form")
+form?.addEventListener('submit', function (event){
+  event.preventDefault();  
+  const data = new FormData(form);
+  const params = new URLSearchParams();
+  for (let [name, value] of data) {
+    // TODO build URL parameters here
+    params.append(name, value);
+    console.log(name, value);
+  }
+  const mailto = `rtakemura@ucsd.edu?${params.toString()}`;
+});
 
 
