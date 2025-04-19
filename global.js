@@ -87,13 +87,12 @@ const form = document.querySelector("form")
 form?.addEventListener('submit', function (event){
   event.preventDefault();  
   const data = new FormData(form);
-  const params = new URLSearchParams();
+  const params = [];
   for (let [name, value] of data) {
     // TODO build URL parameters here
-    params.append(name, value);
-    console.log(name, value);
+    params.push(`${name}=${encodeURIComponent(value)}`);
   }
-  const mailto = `mailto:rtakemura@ucsd.edu?${params.toString()}`;
+  const mailto = `mailto:rtakemura@ucsd.edu?${params.join("&")}`;
   window.location.href = mailto;
 });
 
