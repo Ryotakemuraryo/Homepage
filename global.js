@@ -125,5 +125,5 @@ export function renderProjects(project, containerElement, headingLevel='h2') {
     <p>${p.description}</p>`;
     containerElement.appendChild(article);
 }
-  }
+}
   
