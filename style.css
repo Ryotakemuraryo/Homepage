@@ -144,3 +144,21 @@ li br {
   font-family: inherit;
 }
 
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0.5rem; 
+  text-align: center;
+}
+
+dt {
+  grid-row: 1; 
+  font-weight: bold;
+}
+
+dd {
+  grid-row: 2; 
+  margin: 0; 
+}
+
