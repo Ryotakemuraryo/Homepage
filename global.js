@@ -99,7 +99,7 @@ form?.addEventListener('submit', function (event){
 
 export async function fetchJSON(url) {
   try {
-    // Fetch the JSON file from the given URL
+    // Fetch the JSON file from the given URL(we use async when we use await)
     const response = await fetch(url);
     console.log(response);
     if (!response.ok) {
