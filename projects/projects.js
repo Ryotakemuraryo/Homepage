@@ -14,13 +14,9 @@ if (title_element && projects) {
 }
 })();
 
-let arc = d3.arc().innerRadius(0).outerRadius(50)({
-    startAngle: 0,
-    endAngle: 2 * Math.PI,
-  });
 
 
-let data = [1, 2];
+/* let data = [1, 2];
 let total = 0;
 
 for (let d of data) {
@@ -36,6 +32,10 @@ for (let d of data) {
   angle = endAngle;
 }
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+let arcs = arcData.map((d) => arcGenerator(d)); */
+let data = [1, 2];
+let sliceGenerator = d3.pie();
+let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
 let colors = ['gold', 'purple'];
 arcs.forEach((arc, idx) => {
