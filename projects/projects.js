@@ -34,16 +34,19 @@ for (let d of data) {
 let arcs = arcData.map((d) => arcGenerator(d)); */
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 
-let projects = '../lib/projects.json'; // fetch your project data
-let rolledData = d3.rollups(
-  projects,
-  (v) => v.length,
-  (d) => d.year,
-);
+
+d3.json('../lib/projects.json').then(projects => {
+  let rolledData = d3.rollups(
+    projects,
+    (v) => v.length,
+    (d) => d.year,
+  );
 
 let data = rolledData.map(([year, count]) => {
   return { value: count, label: year };
-});
+})});
+
+
 let sliceGenerator = d3.pie().value((d) => d.value);
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
