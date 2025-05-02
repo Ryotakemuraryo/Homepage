@@ -215,5 +215,6 @@ dd {
   width: 100%;
   padding: 0.5em; 
   font-size: 1em;  
+  margin: 1em 0; 
   box-sizing: border-box;
 }
