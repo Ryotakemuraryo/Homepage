@@ -47,7 +47,7 @@ data.forEach((d, idx) => {
     .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
 });
 
-
+const projectsContainer = document.querySelector('.projects');
 
 let query = '';
 let searchInput = document.querySelector('.searchBar');
