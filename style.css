@@ -176,7 +176,7 @@ dd {
   margin: 0; 
 }
 
-.projects-pie-plot {
+#projects-pie-plot {
   max-width: 20em;
   margin-block: 2em;
 
@@ -194,4 +194,9 @@ dd {
 .legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;  
 }
