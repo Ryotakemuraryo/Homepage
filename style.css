@@ -196,9 +196,14 @@ dd {
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
   border: 1px solid #ccc;
   padding: 1em;
+  flex: 1;
 }
 
 .legend-item {
   display: flex;
   align-items: center;  
+}
+
+.container{
+  display: flex;
 }
