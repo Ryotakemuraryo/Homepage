@@ -15,36 +15,18 @@ if (title_element && projects) {
 })();
 
 
-
-/* let data = [1, 2];
-let total = 0;
-
-for (let d of data) {
-  total += d;
-}
-
-let angle = 0;
-let arcData = [];
-
-for (let d of data) {
-  let endAngle = angle + (d / total) * 2 * Math.PI;
-  arcData.push({ startAngle: angle, endAngle });
-  angle = endAngle;
-}
-let arcs = arcData.map((d) => arcGenerator(d)); */
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 
-
-d3.json('../lib/projects.json').then(projects => {
-  let rolledData = d3.rollups(
-    projects,
-    (v) => v.length,
-    (d) => d.year,
-  );
+let projects = await fetchJSON('../lib/projects.json'); // fetch your project data
+let rolledData = d3.rollups(
+  projects,
+  (v) => v.length,
+  (d) => d.year,
+);
 
 let data = rolledData.map(([year, count]) => {
   return { value: count, label: year };
-})});
+});
 
 
 let sliceGenerator = d3.pie().value((d) => d.value);
