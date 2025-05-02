@@ -80,6 +80,20 @@ form button{
   margin: 0;/*delete margin*/
 }
 
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;       
+  font-size: 0.95rem;
+}
+
+.project-year {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+
 h1{
   font-size: 400%;
 }
