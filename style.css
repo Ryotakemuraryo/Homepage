@@ -194,6 +194,7 @@ dd {
 .legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  border: 1px solid black
 }
 
 .legend-item {
