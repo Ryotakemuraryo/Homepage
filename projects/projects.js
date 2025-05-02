@@ -47,3 +47,21 @@ data.forEach((d, idx) => {
     .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
 });
 
+
+
+let query = '';
+let searchInput = document.querySelector('.searchBar');
+
+
+
+
+searchInput.addEventListener('change', (event) => {
+  // update query value
+  query = event.target.value;
+  // TODO: filter the projects
+  let filteredProjects = projects.filter((project) =>
+    project.title.includes(query),
+  );
+  // TODO: render updated projects!
+  renderProjects(filteredProjects, projectsContainer, 'h2')
+});
