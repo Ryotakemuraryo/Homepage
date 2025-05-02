@@ -52,10 +52,7 @@ data.forEach((d, idx) => {
 let query = '';
 let searchInput = document.querySelector('.searchBar');
 
-
-
-
-searchInput.addEventListener('change', (event) => {
+searchInput.addEventListener('input', (event) => {
   // update query value
   query = event.target.value;
   // TODO: filter the projects
