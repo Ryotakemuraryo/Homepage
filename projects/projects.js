@@ -56,9 +56,10 @@ searchInput.addEventListener('input', (event) => {
   // update query value
   query = event.target.value;
   // TODO: filter the projects
-  let filteredProjects = projects.filter((project) =>
-    project.title.includes(query),
-  );
+  let filteredProjects = projects.filter((project) =>{
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+});
   // TODO: render updated projects!
   renderProjects(filteredProjects, projectsContainer, 'h2')
 });
