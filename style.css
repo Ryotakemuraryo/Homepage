@@ -210,3 +210,7 @@ dd {
   align-items: center; 
   gap: 2em;
 }
+
+.searchBar {
+  display: flex;
+}
