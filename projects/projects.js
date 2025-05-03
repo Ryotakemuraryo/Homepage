@@ -92,6 +92,8 @@ function renderPieChart(projectsGiven) {
       .attr('style', `--color:${colors(idx)}`) // set the style attribute while passing in parameters
       .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
   });
+  data = newData;
+  arcs = newArcs;
 }
 
 // Call this function on page load
