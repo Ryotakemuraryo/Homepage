@@ -85,7 +85,7 @@ function renderPieChart(projectsGiven) {
     newSVG.append('path').attr('d', arc).attr('fill', colors(idx))
   });
 
-  data.forEach((d, idx) => {
+  newData.forEach((d, idx) => {
     legend
       .append('li')
       .attr('class', 'legend-item')
