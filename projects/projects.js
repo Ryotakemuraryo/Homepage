@@ -133,5 +133,16 @@ arcs.forEach((arc, i) => {
           ? ''
           : (idx === selectedIndex ? 'selected' : 'dimmed')
       ));
+      if (selectedIndex === -1) {
+        renderProjects(projects, projectsContainer, 'h2');
+      } else {
+        // TODO: filter projects and project them onto webpage
+        // Hint: `.label` might be useful
+        let selectedYear = data[selectedIndex].label;
+        let filteredProjects = projects.filter(
+          (project) => project.year.toString() === selectedYear.toString()
+        );
+        renderProjects(filteredProjects, projectsContainer, 'h2');
+      }
     });
 });
