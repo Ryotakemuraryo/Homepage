@@ -52,14 +52,55 @@ const projectsContainer = document.querySelector('.projects');
 let query = '';
 let searchInput = document.querySelector('.searchBar');
 
-searchInput.addEventListener('input', (event) => {
-  // update query value
-  query = event.target.value;
-  // TODO: filter the projects
-  let filteredProjects = projects.filter((project) =>{
+function setQuery(query) {
+  return projects.filter((project) => {
     let values = Object.values(project).join('\n').toLowerCase();
     return values.includes(query.toLowerCase());
-});
-  // TODO: render updated projects!
-  renderProjects(filteredProjects, projectsContainer, 'h2')
+  });
+}
+
+
+// Refactor all plotting into one function
+function renderPieChart(projectsGiven) {
+  // re-calculate rolled data
+  let newRolledData = d3.rollups(
+    projectsGiven,
+    (v) => v.length,
+    (d) => d.year,
+  );
+  // re-calculate data
+  let newData = newRolledData.map(([year, count]) => {
+    return {value: count, label: year}; // TODO
+  });
+  // re-calculate slice generator, arc data, arc, etc.
+  let newSliceGenerator = d3.pie().value((d) => d.value);;
+  let newArcData = newSliceGenerator(newData);
+  let newArcs = newArcData.map((d) => arcGenerator(d));
+  // TODO: clear up paths and legends
+  let newSVG = d3.select('svg');
+  newSVG.selectAll('path').remove();
+  let legend = d3.select('.legend');
+  legend.selectAll('li').remove();
+  // update paths and legends, refer to steps 1.4 and 2.2
+  newArcs.forEach((arc, idx) => {
+    newSVG.append('path').attr('d', arc).attr('fill', colors(idx))
+  });
+
+  data.forEach((d, idx) => {
+    legend
+      .append('li')
+      .attr('class', 'legend-item')
+      .attr('style', `--color:${colors(idx)}`) // set the style attribute while passing in parameters
+      .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
+  });
+}
+
+// Call this function on page load
+renderPieChart(projects);
+
+searchInput.addEventListener('input', (event) => {
+  let filteredProjects = setQuery(event.target.value);
+  // re-render legends and pie chart when event triggers
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+  renderPieChart(filteredProjects);
 });
