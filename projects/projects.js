@@ -98,6 +98,7 @@ function renderPieChart(projectsGiven) {
 renderPieChart(projects);
 
 searchInput.addEventListener('input', (event) => {
+  selectedIndex = -1;
   query = event.target.value;
   let filteredProjects = setQuery(event.target.value);
   // re-render legends and pie chart when event triggers
