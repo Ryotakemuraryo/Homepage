@@ -228,3 +228,20 @@ svg:has(path:hover) {
 path {
   transition: 300ms;
 }
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+path.dimmed, .legend-item.dimmed {
+  opacity: 0.3;
+}
+
+path.selected, .legend-item.selected {
+  stroke: black;
+  stroke-width: 2;
+}
