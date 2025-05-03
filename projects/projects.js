@@ -139,14 +139,13 @@ arcs.forEach((arc, i) => {
         // TODO: filter projects and project them onto webpage
         // Hint: `.label` might be useful
         let selectedYear = data[selectedIndex].label;
-        let filteredProjects = projects.filter(
-          (project) => {
-            let values = Object.values(project).join('\n').toLowerCase();
-            return (
-              project.year.toString() === selectedYear.toString() &&
-              values.includes(query.toLowerCase())
-            );
-          });
+        let filteredProjects = projects.filter((project) => {
+          let values = Object.values(project).join('\n').toLowerCase();
+          let matchesQuery = values.includes(query.toLowerCase());
+          let matchesYear = selectedIndex === -1 || project.year.toString() === data[selectedIndex].label.toString();
+          return matchesQuery && matchesYear;
+        });
+        
         renderProjects(filteredProjects, projectsContainer, 'h2');
       }
     });
