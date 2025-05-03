@@ -49,7 +49,7 @@ data.forEach((d, idx) => {
 
 const projectsContainer = document.querySelector('.projects');
 
-
+let query = '';
 let searchInput = document.querySelector('.searchBar');
 
 function setQuery(query) {
