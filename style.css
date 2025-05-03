@@ -243,5 +243,5 @@ path.dimmed, .legend-item.dimmed {
 
 path.selected, .legend-item.selected {
   stroke: black;
-  stroke-width: 2;
+  stroke-width: 1;
 }
