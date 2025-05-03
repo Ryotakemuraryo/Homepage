@@ -218,3 +218,13 @@ dd {
   margin: 1em 0; 
   box-sizing: border-box;
 }
+
+svg:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
