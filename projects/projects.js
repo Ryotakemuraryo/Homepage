@@ -49,15 +49,8 @@ data.forEach((d, idx) => {
 
 const projectsContainer = document.querySelector('.projects');
 
-let query = '';
-let searchInput = document.querySelector('.searchBar');
 
-function setQuery(query) {
-  return projects.filter((project) => {
-    let values = Object.values(project).join('\n').toLowerCase();
-    return values.includes(query.toLowerCase());
-  });
-}
+
 
 
 // Refactor all plotting into one function
