@@ -1,27 +1,27 @@
 [
     {
         "title": "Pix2Pix",
-        "year": "2024",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "I implemented pix2pix and tried to generate the comic book character from the real photo. I like to read comic books and have dreamed of myself becoming a character some day. And the time comes. If we use the pix2pix, I can make my dream comes true. Thus I tried to make comic book character from the real photo by using pix2pix. At first I tuned my pix2pix model by using Facades dataset, which is used in original paper. After that I tried to make myself a comic books character. Though the output was somewhat blurred, I could change my photo like a comic book character.(https://ryotakemuraryo.github.io/pix2pix/)"
     },
     {
         "title": "Mahjong AI",
-        "year": "2024",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Is it possible to design an AI algorithm that behaves similar to human players ranging from beginning to master for the simple-styled Shanghai mahjong? The data used represents training data by simulations and measures the skill expression of our agent given a starting hand. Our environment is used to guide the AI algorithm how to behave as an agent with a goal to win but with differentiating skill levels.(https://ryotakemuraryo.github.io/MahjongAI/)"
     },
     {
         "title": "Persuasive or Deceptive Visualization?",
-        "year": "2024",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "I designed two visualizations to persuade a reader about each side of the proposition; one is on the side and the other is against the side!(https://ryotakemuraryo.github.io/Assignment2/)"
     },
     {
-        "title": "Rem non incidunt quos?",
-        "year": "2023",
+        "title": "Start studying abroad in University of California San Diego.",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Blanditiis nobis praesentium culpa sit cupiditate sequi molestias non at, iusto minus hic dolorem ullam esse illum quam, odit, porro aperiam fuga laboriosam soluta ipsam rem! Tenetur aperiam cupiditate iusto."
+        "description": "I start stuydying abroad at University of California San Diego from this september to June 2025. I'll mainly study energy engineering and computer science!"
     },
     {
         "title": "Cum facilis aut sequi!",
