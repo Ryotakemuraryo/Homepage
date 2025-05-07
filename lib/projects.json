@@ -1,9 +1,9 @@
 [
     {
-        "title": "I have a pen.",
+        "title": "Pix2Pix",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt totam facere vero eos magnam et animi, beatae placeat tempore quia. At minima porro ratione soluta repellat, dolor delectus numquam?"
+        "description": "Implementing Pix2Pix architecture and make a model that can produce comic book ish character from the input image."
     },
     {
         "title": "Veritatis sunt non reprehenderit.",
