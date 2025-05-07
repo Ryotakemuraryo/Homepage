@@ -9,7 +9,7 @@
         "title": "Mahjong AI",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Is it possible to design an AI algorithm that behaves similar to human players ranging from beginning to master for the simple-styled Shanghai mahjong? The data used represents training data by simulations and measures the skill expression of our agent given a starting hand. Our environment is used to guide the AI algorithm how to behave as an agent with a goal to win but with differentiating skill levels."
+        "description": "Is it possible to design an AI algorithm that behaves similar to human players ranging from beginning to master for the simple-styled Shanghai mahjong? The data used represents training data by simulations and measures the skill expression of our agent given a starting hand. Our environment is used to guide the AI algorithm how to behave as an agent with a goal to win but with differentiating skill levels.(https://ryotakemuraryo.github.io/MahjongAI/)"
     },
     {
         "title": "Persuasive or Deceptive Visualization?",
