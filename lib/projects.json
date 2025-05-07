@@ -2,7 +2,7 @@
     {
         "title": "Pix2Pix",
         "year": "2024",
-        "image": "./images/pix2pix.jpeg",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "I implemented pix2pix and tried to generate the comic book character from the real photo. I like to read comic books and have dreamed of myself becoming a character some day. And the time comes. If we use the pix2pix, I can make my dream comes true. Thus I tried to make comic book character from the real photo by using pix2pix. At first I tuned my pix2pix model by using Facades dataset, which is used in original paper. After that I tried to make myself a comic books character. Though the output was somewhat blurred, I could change my photo like a comic book character."
     },
     {
