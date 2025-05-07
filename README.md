@@ -1,2 +1,2 @@
 
-Here is the link for my web page
+This is the code for my web page
