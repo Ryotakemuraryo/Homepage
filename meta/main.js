@@ -200,6 +200,7 @@ function createBrushSelector(svg) {
 
     
 function brushed(event) {
+  console.log('brushed called'); 
   const selection = event.selection;
   d3.selectAll('circle').classed('selected', (d) =>
     isCommitSelected(selection, d),
