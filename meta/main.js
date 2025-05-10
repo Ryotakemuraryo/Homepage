@@ -96,6 +96,9 @@ function renderScatterPlot(data, commits) {
   .append('svg')
   .attr('viewBox', `0 0 ${width} ${height}`)
   .style('overflow', 'visible');
+
+  createBrushSelector(svg);
+  
   const xScale = d3
   .scaleTime()
   .domain(d3.extent(commits, (d) => d.datetime))
@@ -148,6 +151,7 @@ function renderScatterPlot(data, commits) {
     .attr('transform', `translate(${usableArea.left}, 0)`)
     .call(yAxis);    
     const dots = svg.append('g').attr('class', 'dots');
+    
 
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
   const rScale = d3
@@ -157,7 +161,6 @@ function renderScatterPlot(data, commits) {
 
   // Sort commits by total lines in descending order
   const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
-
 
   dots
     .selectAll('circle')
@@ -178,8 +181,14 @@ function renderScatterPlot(data, commits) {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
       updateTooltipVisibility(false);
     });
+    
     }
     
+
+function createBrushSelector(svg) {
+      svg.call(d3.brush());
+    }    
+
 
 function renderTooltipContent(commit) {
       const link = document.getElementById('commit-link');
@@ -205,6 +214,7 @@ function updateTooltipPosition(event) {
       tooltip.style.left = `${event.clientX}px`;
       tooltip.style.top = `${event.clientY}px`;
     }
+
 
     
 async function main() {
