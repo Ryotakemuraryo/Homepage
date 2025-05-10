@@ -98,13 +98,13 @@ function renderScatterPlot(data, commits) {
   .style('overflow', 'visible');
 
   
-  const xScale = d3
+  xScale = d3
   .scaleTime()
   .domain(d3.extent(commits, (d) => d.datetime))
   .range([0, width])
   .nice();
 
-  const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+  yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
    
 
   const margin = { top: 10, right: 10, bottom: 30, left: 20 };
