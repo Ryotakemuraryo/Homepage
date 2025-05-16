@@ -3,72 +3,84 @@
         "title": "Pix2Pix",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "I implemented pix2pix and tried to generate the comic book character from the real photo. I like to read comic books and have dreamed of myself becoming a character some day. And the time comes. If we use the pix2pix, I can make my dream comes true. Thus I tried to make comic book character from the real photo by using pix2pix. At first I tuned my pix2pix model by using Facades dataset, which is used in original paper. After that I tried to make myself a comic books character. Though the output was somewhat blurred, I could change my photo like a comic book character.(https://ryotakemuraryo.github.io/pix2pix/)"
     },
     {
         "title": "Mahjong AI",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Is it possible to design an AI algorithm that behaves similar to human players ranging from beginning to master for the simple-styled Shanghai mahjong? The data used represents training data by simulations and measures the skill expression of our agent given a starting hand. Our environment is used to guide the AI algorithm how to behave as an agent with a goal to win but with differentiating skill levels.(https://ryotakemuraryo.github.io/MahjongAI/)"
+    },
+    {
+        "title": "Geospatial visualizations",
+        "year": "2025",
+        "image": "https://ryotakemuraryo.github.io/bikewatching/",
+        "url":"https://ryotakemuraryo.github.io/bikewatching/",
+        "description": "I built an immersive, interactive map visualization of bike traffic in the Boston area during different times of the day"
     },
     {
         "title": "Persuasive or Deceptive Visualization?",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "I designed two visualizations to persuade a reader about each side of the proposition; one is on the side and the other is against the side!(https://ryotakemuraryo.github.io/Assignment2/)"
     },
     {
         "title": "Start studying abroad in University of California San Diego.",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "I start stuydying abroad at University of California San Diego from this september to June 2025. I'll mainly study energy engineering and computer science!"
-    },
-    {
-        "title": "Cum facilis aut sequi!",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Corporis rem, quisquam tempora recusandae molestias eum fugit cupiditate et eligendi dicta cum quas cumque aperiam quasi laboriosam, consectetur provident. Commodi, autem. Dolores, reiciendis. Quae ad voluptatum eligendi non officia?"
     },
     {
         "title": "Nihil architecto omnis nisi.",
         "year": "2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Exercitationem optio dignissimos aliquam dolorem porro totam, reiciendis, ullam delectus earum, ea expedita libero quae voluptas. Soluta voluptas repudiandae eum qui pariatur, tempore, expedita sit nulla inventore consequuntur consequatur neque."
     },
     {
         "title": "Sit mollitia perferendis deleniti?",
         "year": "2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Ex, ullam dolorum? Et laboriosam quidem a molestias sequi molestiae eligendi inventore possimus autem tenetur! Sed itaque explicabo laudantium quaerat? Vero nulla ducimus odio temporibus labore ea iusto atque perferendis?"
     },
     {
         "title": "Reprehenderit exercitationem minus est!",
         "year": "2019",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Earum quidem quam libero, at officia nihil iure exercitationem consequatur error ea minus ratione corrupti doloremque fugiat labore ipsum quae. Deleniti quod id asperiores officia ex placeat, nobis iusto voluptates."
     },
     {
         "title": "Vitae voluptatem dignissimos itaque!",
         "year": "2018",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Quia suscipit, dicta corrupti temporibus quas saepe consequuntur maiores at non nemo sint nostrum fugiat commodi aliquid! Iure tempora eaque hic. Iure officiis illum magni cupiditate eum, officia placeat debitis!"
     },
     {
         "title": "Odit quo nisi natus.",
         "year": "2017",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Deserunt ipsam ex velit eius aliquid quam tempora fugit sint eligendi accusamus, iste voluptatibus culpa officia perspiciatis rem tempore! Voluptate, sed ipsam voluptates culpa eos similique praesentium rem omnis ullam?"
     },
     {
         "title": "Vero impedit fuga et.",
         "year": "2016",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Optio cupiditate, veritatis beatae doloremque corporis aliquam debitis. Voluptatibus, laboriosam incidunt ipsum fugit ipsam itaque ex autem, mollitia commodi eligendi placeat fugiat quis voluptates unde amet et atque accusamus aliquid."
     },
     {
         "title": "Dolorum neque ducimus recusandae.",
         "year": "2016",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "url":"None",
         "description": "Perspiciatis unde quibusdam in ipsam earum at, totam illo animi, itaque, deleniti ipsa expedita maxime soluta accusantium qui velit ex mollitia consectetur. Illo et nobis veniam minima aspernatur libero molestias."
     }
 ]
