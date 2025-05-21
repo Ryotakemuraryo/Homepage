@@ -324,3 +324,13 @@ circle.selected {
   margin-top: 1em;
 }
 
+#commit-filter {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1em;
+}
+
+#commit-filter time {
+  margin-left: auto;
+}
+

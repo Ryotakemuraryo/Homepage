@@ -299,14 +299,51 @@ function renderLanguageBreakdown(selection) {
       }
     }
 
-    
 async function main() {
-      const data = await loadData();         
-      commits = processCommits(data); 
-    
-      renderCommitInfo(data, commits);    
-      renderScatterPlot(data, commits);       
+  const data = await loadData();         
+  commits = processCommits(data); 
+
+  renderCommitInfo(data, commits);    
+  renderScatterPlot(data, commits);       
+
+  // スライダー処理（commitsが使えるここで初期化する）
+  const commitSlider = document.getElementById('commit-slider');
+  const selectedTime = d3.select('#selectedTime');
+  let commitProgress = 100;
+
+  // 時間スケールの作成
+  let timeScale = d3.scaleTime(
+    [d3.min(commits, d => d.datetime), d3.max(commits, d => d.datetime)],
+    [0, 100]
+  );
+
+  // 日時と表示更新関数
+  function updateTimeDisplay() {
+    const commitMaxTime = timeScale.invert(commitProgress);
+    selectedTime.text(commitMaxTime.toLocaleString('en', {
+      dateStyle: 'long',
+      timeStyle: 'short'
+    }));
+
+    // フィルター：commitMaxTime以前のみ表示
+    d3.selectAll('circle')
+      .style('display', d => d.datetime <= commitMaxTime ? null : 'none');
   }
-  
+
+  // スライダーイベント登録
+  commitSlider.addEventListener('input', (e) => {
+    commitProgress = +e.target.value;
+    updateTimeDisplay();
+  });
+
+  // 初期表示
+  updateTimeDisplay();
+}
+
 main(); // 実行スタート
+
+
+
+
+
   
